@@ -1,0 +1,23 @@
+overwrite: true
+schema: 'http://localhost:3000/api/graphql'
+documents: 'client/graphql/**/*.ts'
+generates:
+  api/generated/index.d.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
+  client/generated/apolloComponents.tsx:
+    config:
+      noNamespaces: true
+      withHooks: true
+      withHOC: false
+      useIndexSignature: true
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+  client/generated/introspectionSchema.json:
+    plugins:
+      - introspection
+    config:
+      minify: true
