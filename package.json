@@ -35,7 +35,7 @@
     "formik": "^2.1.4",
     "generate-password": "^1.5.1",
     "graphql-scalars": "^1.1.0",
-    "immer": "^6.0.3",
+    "immer": "^8.0.1",
     "isomorphic-unfetch": "^3.0.0",
     "lodash": "^4.17.15",
     "mongodb": "^3.5.7",
